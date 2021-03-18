@@ -1,0 +1,123 @@
+/*configurações gerais*/
+* {
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: Metalmania;
+  src: url(../fontes/MetalMania-Regular.ttf)
+}
+
+/*variáveis*/
+.tema-ligth:root {
+  --bgcolor: white;
+  --txtcolor: black;
+  --headcolor: #166fff;
+  --menu-bg: #3b84ca;
+  --menu-text: white;
+  --menu-text-hover: black;
+  --menu-bg-hover: white;
+  --link-color: #28d2f9;
+}
+
+.tema-dark:root {
+  --bgcolor: #17171d;
+  --txtcolor: #ffffff;
+  --headcolor: #1e1d1d;
+  --menu-bg: rgb(70,70,70);
+  --menu-text: white;
+  --menu-text-hover: black;
+  --menu-bg-hover: white;
+  --link-color: #28d2f9;
+}
+
+body {
+  background-color: var(--bgcolor);
+  color: var(--txtcolor);
+}
+
+/*Menu e cabeçalho*/
+header {
+  background-color: var(--headcolor);
+  padding: 10px 10px;
+  color: white;
+  border-bottom: 2px solid black;
+}
+.logo {
+  font-family: Metalmania;
+  text-shadow: 2px 2px 2px #000;
+}
+.logo2 {
+  text-align: center;
+  margin-top: 2em;
+  font-family: Metalmania;
+}
+.logo2 img {
+  max-width: 40%;
+  border-radius: 50%;
+  display: inline;
+  border: 2px solid white;
+}
+.barra {
+  font-size: 25px;
+  border: 1px solid black;
+  padding: 0 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: block;
+}
+.menu {
+  background-color: var(--menu-bg);
+  width: 360px;
+  min-height: 100%;
+  max-height: 200%;
+  position: absolute;
+  color: var(--menu-text);
+  left: -100%;
+  transition: 1s;
+
+}
+.menu ul {
+  list-style: none;
+}
+.menu li {
+  font-size: 20px;
+  text-align: center;
+
+}
+.menu ul li a {
+  text-decoration: none;
+  color: var(--menu-text);
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+.menu ul li a:hover {
+  color: var(--menu-text-hover);
+  background-color: var(--menu-bg-hover);
+}
+.menu ul li ul {
+  display: none;
+  margin-left: 30px;
+}
+.menu ul li ul li a {
+  border-bottom: none;
+  color: Orange;
+}
+
+/*estilo dos títulos das páginas*/
+.pagetit {
+  font-family: Metalmania;
+  text-align: Center;
+  margin-top: 2em;
+  text-shadow: 2px 2px 2px #3b87d0;
+}
+
+/*página de configurações*/
+.temas {
+  background-color: #bfbfbf;
+  max-width: 250px;
+  margin: auto;
+  padding: 1em;
+}
