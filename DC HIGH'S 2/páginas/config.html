@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="tema-ligth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/config.css" />
+  <script src="../js/index.js"></script>
+  <title>DC HIGH'S 2</title>
+</head>
+<body>
+
+  <!---Cabeçalhor-->
+  <header>
+    <div class="logo">
+      <h1>DC HIGH'S</h1>
+    </div>
+    <div class="barra" onclick="showmenu()">
+      ☰
+    </div>
+  </header>
+
+  <!--Menu-->
+  <nav class="menu">
+    <ul>
+      <li><a href="../index.html">Início</a></li>
+      <li> <a onclick="showmenudow()">Downloads</a></li>
+      <li>
+        <ul>
+          <li><a href="mapas.html">Mapas</a></li>
+          <li><a href="tabelas.html">Tabelas</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Calculadoras</a></li>
+      <li><a href="config.html">Configurações</a></li>
+    </ul>
+
+    <div class="logo2">
+      <img src="../imagens/dchighs.png" alt="DC HIGH'S" />
+      <h1>DC HIGH'S</h1>
+    </div>
+  </nav>
+
+  <!--Conteúdo-->
+  <main>
+    <h1 class="pagetit">Configurações</h1>
+
+    <section class="temas" onclick="tema()">
+      <h2>Temas ligth</h2>
+      <div class="temas-ligth">
+        <p>
+          <label for="tema-ligth">tema-ligth</label>
+        </p>
+        <input type="radio" name="temas" id="tema-ligth" checked />
+      </div>
+      <h2>temas-dark</h2>
+      <div class="temas-dark">
+        <p>
+          <label for="tema-dark">tema-dark</label>
+        </p>
+        <input type="radio" name="temas" id="tema-dark" />
+      </div>
+      <div id="temaesc">
+
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
